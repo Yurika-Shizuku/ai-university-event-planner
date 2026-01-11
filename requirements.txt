@@ -1,0 +1,17 @@
+pytz
+protobuf
+google-api-python-client     # Google Calendar API
+google-auth-httplib2         # OAuth helper
+google-auth-oauthlib         # OAuth helper
+pydantic                     # Data validation for structured JSON
+python-dotenv                # API Key management
+pathlib                      # Modern file path handling
+streamlit
+google-genai                  # Gemini API SDK
+
+
+
+
+
+
+
