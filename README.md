@@ -3,8 +3,7 @@ An intelligent dual-calendar system that uses **Gemini 2.0** to synchronizes uni
 
 ---
 
-## Problem Statement
-The "Why"
+## The Why?
 University life is a balancing act between academics and extracurriculars. Existing tools often dump everything into one calendar, leading to cluttered views and scheduling overlaps.
 - Students and club organizers must manually track classes and events
 - Overlapping academic and club events  
