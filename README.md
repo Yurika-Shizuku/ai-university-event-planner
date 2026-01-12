@@ -1,4 +1,4 @@
-# ai-university-event-planner
+# AI-university-event-planner
 An intelligent dual-calendar system that uses **Gemini 2.0** to synchronizes university timetables and club events using Gemini 2.0 to eliminate scheduling conflicts.
 
 ---
