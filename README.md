@@ -8,10 +8,11 @@ University life is a balancing act between academics and extracurriculars. Exist
 - Students and club organizers must manually track classes and events
 - Overlapping academic and club events  
 - Double bookings during class hours
--  
+
 This project solves the problem by **automatically extracting timetables using AI** and **enforcing conflict-aware scheduling** across multiple Google Calendars.
 
 Static Semester Calendar: Reserved exclusively for university-mandated timetables and lectures.
+
 Club Temporary Events: A dedicated space for organizer-led events.
 
 ---
@@ -60,10 +61,10 @@ Club Temporary Events: A dedicated space for organizer-led events.
 ## 4 Tech Stack
 
 - **AI / LLM**: Gemini 2.0  
-- **Backend**: Python  
+- **Backend**: Python 3.11
 - **Frontend**: Streamlit  
-- **APIs**: Google Calendar API  
-- **Authentication**: OAuth 2.0  
+- **APIs**: Google Calendar API 
+- **Authentication**: OAuth 2.0 
 - **Timezone Handling**: pytz (Asia/Kolkata)
 
 ---
@@ -91,14 +92,10 @@ GOOGLE_API_KEY=your_google_api_key_here
 Note: On first run, a browser window will open for authentication, creating `token.json` locally..
 
 ---
-## Reliability
-**Quota Management**: Implements exponential backoff and Streamlit content-caching to avoid 429 Resource Exhausted errors.
-**JSON Sanitization**: Features a custom narrative-stripping parser to handle LLM conversational noise and markdown fences.
-**Strict Timezones**: All operations are hard-locked to Asia/Kolkata for consistency
 
----
 ## Future Scope & Scaling
 *Smart Conflict Resolution & Recommendation*
+
 **Intelligent Rescheduling**: If a conflict is detected, the AI will proactively suggest the three best alternative slots based on the target group's collective free time across all calendars.
 
 **Urgency Scoring**: Implement a priority system where "University Exams" (Static) take absolute precedence, but "Major Club Events" can temporarily suggest a shift in minor "Study Group" sessions.
