@@ -1,17 +1,18 @@
-pytz
-protobuf
-google-api-python-client     # Google Calendar API
-google-auth-httplib2         # OAuth helper
-google-auth-oauthlib         # OAuth helper
-pydantic                     # Data validation for structured JSON
-python-dotenv                # API Key management
-pathlib                      # Modern file path handling
+pandas
+# --- Core Framework ---
 streamlit
-google-genai                  # Gemini API SDK
+python-dotenv                # API Key and Environment management
 
+# --- AI & NLP ---
+google-genai                  # Gemini 2.0 SDK for structured extraction and Agent logic
+pydantic                     # Schema validation for AI-safe data models
 
+# --- Google Calendar API & Authentication ---
+google-api-python-client     # Primary Google Calendar API v3 client
+google-auth-httplib2         # Transport helper for Google Auth
+google-auth-oauthlib         # OAuth 2.0 flow management
 
-
-
-
-
+# --- Time & Data Handling ---
+pytz                         # Strict timezone management (Asia/Kolkata)
+protobuf                     # Protocol Buffers (dependency for Google APIs)
+pathlib                      # Modern file path handling
